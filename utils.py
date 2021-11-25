@@ -1,3 +1,5 @@
+import numpy as np
+
 def envelope(x, N):
     w = np.abs(x)
     b = [1.0/N]*N
