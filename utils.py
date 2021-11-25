@@ -4,7 +4,7 @@ def envelope(x, N):
     y = np.convolve(w, b, mode='same')
     return y
 
-def synthesize(f0, phi, Ak, t):
+def synthetize(f0, phi, Ak, t):
   y = 0
   for k in range(1, len(Ak) + 1):
     y += Ak[k-1] * np.cos(2*np.pi*k*f0*t + k*phi - (k-1)*np.pi/2)
